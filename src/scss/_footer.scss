@@ -1,0 +1,107 @@
+#siteseal{
+  img{
+    margin-right: 40px;
+  }
+}
+footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  .logo{
+    align-self: flex-end;
+    margin-bottom: 25px;
+  }
+  .phone{
+    float: right;
+    clear: both;
+    display: block;
+    a{
+      font-weight: bold;
+      font-size: 3.5rem;
+      font-family: $fontOswald;
+      color: white;
+      float: right;
+      margin-top: 25px;
+    }
+  }
+  .social{
+    float: left;
+    clear: both;
+    display: block;
+    a:hover{
+      opacity: 0.8;
+    }
+    img{
+      margin-right: 10px;
+    }
+  }
+}
+.subfooter {
+    display: flex;
+    flex: 0;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 25px 0;
+    text-align: center;
+    .phone {
+        margin-bottom: 1.5rem;
+        font-size: 1.5625rem; // 25px
+    }
+}
+// FOOTER
+.site-footer {
+    background-color: $secondaryColorDark;
+    color: #fff;
+
+    .copyright {
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .netgain {
+        font-family: Arial, sans-serif;
+        font-size: 1.6rem;
+    }
+}
+
+.flex-footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    padding-top: 1.5rem;
+    .f-item {
+        flex: 1 0 50%;
+        padding-bottom: 1.5rem;
+    }
+    .address{
+      text-align: right;
+      margin-top: 25px;
+      margin-bottom: 40px;
+      align-self: self-start;
+      h3{
+        color: $primaryColor;
+        margin-bottom: 0px;
+      }
+      .half{
+        width: 49%;
+        display: inline-block;
+        h3{
+          color: $primaryColor;
+          margin-bottom: 0px;
+        }
+      }
+    }
+}
+.netgain {
+    text-align: right;
+}
+.footer-contact-container {
+    text-align: center;
+    background-color: $darkGray;
+    color: #fff;
+    margin-bottom: 20px;
+    h3{
+      font-size: 3rem;
+    }
+
+}

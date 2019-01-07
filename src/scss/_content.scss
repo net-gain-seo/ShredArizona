@@ -1,0 +1,531 @@
+.viewproducts{
+  .row{
+    padding: 20px 0px;
+  }
+  p{
+    color: white;
+    text-align: right;
+    float: right;
+    font-size: 2.7rem;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    font-family: $fontAnton;
+  }
+  a{
+    float: left;
+  }
+}
+/**
+ * Products Main Page
+ */
+.p-products {
+    h1 {
+        margin-bottom: 1rem;
+        color: $secondaryColor;
+    }
+}
+.pcards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+.pcard {
+    // flex: 1 0 48%;
+    max-width: 48%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background: #fff;
+    margin: 1rem 0;
+}
+.pcard-block { // right side of card
+    flex: 1 0;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+}
+.pcard-text {
+    flex: 1 1 auto;
+    line-height: 1.25;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.pcard-footer {
+    background: none;
+    justify-content: flex-end;
+    a {
+        position: relative;
+        color: $primaryColor;
+        &:hover {
+            color: $secondaryColor;
+            &:after {
+                transform: translateX(80%);
+            }
+        }
+        // @todo maybe move this to a mixin
+        &:after {
+            content: "\f101";
+            font-family: "fontawesome";
+            display: inline-block;
+            transform: translateX(50%);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}
+/**
+ * Products Main Page
+ */
+.p-products {
+    h1 {
+        margin-bottom: 1rem;
+        color: $secondaryColor;
+    }
+}
+.pcards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+.pcard {
+    // flex: 1 0 48%;
+    max-width: 48%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    background: #fff;
+    margin: 2rem 0;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.pcard-block { // right side of card
+    flex: 1 0;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5rem;
+}
+.pcard-text {
+    flex: 1 1 auto;
+    line-height: 1.25;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.pcard-title,
+.pcard-footer {
+    font-family: $fontAnton;
+}
+.pcard-title {
+    font-size: 2.7rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: $primaryColor;
+}
+.pcard-img{
+  img{
+    width: 200px;
+    display: inline-block;
+  }
+}
+.pcard-footer {
+    background: none;
+    justify-content: flex-end;
+    a {
+        position: relative;
+        color: $secondaryColor;
+        font-size: 2.2rem;
+        &:hover {
+            color: $primaryColor;
+            &:after {
+                transform: translateX(80%);
+            }
+        }
+        // @todo maybe move this to a mixin
+        &:after {
+            content: "\f101";
+            font-family: "fontawesome";
+            display: inline-block;
+            transform: translateX(50%);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+}
+/** Single Product */
+.product-wrap {
+    background: $primaryColor;
+    color: #fff;
+    h2 {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+    }
+    p {
+        line-height: 1.2;
+        margin: 0;
+        &:not(:last-child) {
+            margin-bottom: 1.75rem;
+        }
+    }
+    .flexed {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .pcol {
+        flex: 1 0 42%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    ul {
+        margin-bottom: 0;
+        padding-left: 1.25rem;
+        li:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+.fullhr{
+  position: relative;
+  z-index: 11111;
+  margin: 0px;
+  border-top: 1px solid white;
+}
+.passionsection{
+  padding: 40px 0px;
+  padding-bottom: 20px;
+  .largetitle{
+    margin-bottom: 4rem;
+  }
+  h2{
+    margin-top: 5rem;
+    a:hover{
+      color: white;
+    }
+  }
+}
+.meetourteam{
+    padding: 60px 0px;
+  h2{
+    font-size: 5rem;
+    float: left;
+    display: inline-block;
+    color: white;
+    margin-right: 40px;
+    font-family: $fontOswald;
+    font-weight: bold;
+  }
+  p{
+    float: left;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 15px;
+  }
+  img{
+    float: left;
+    display: inline-block;
+    width: 60px;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+  img:hover{
+    opacity: 0.8;
+  }
+  h4{
+    font-size: 2.7rem;
+    float: left;
+    display: block;
+    color: white;
+    clear: both;
+    font-family: $fontAnton;
+  }
+}
+.visionsimple{
+  h1{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 6rem;
+  }
+  h3{
+    color: white;
+    font-size: 2.7rem;
+  }
+  p{
+    color: white;
+  }
+}
+.ourteam{
+  h2{
+    color: $primaryColor;
+    padding: 30px 0px;
+    margin-bottom: 0px;
+  }
+}
+.mapsection{
+  width: 100%;
+  padding: 0px!important;
+  margin-bottom: -2px;
+}
+
+// The rest of the team grid
+.f-team-rest {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 4rem 0;
+    h1 {
+        flex-basis: 100%;
+        padding: 30px 0px;
+    }
+    h2,
+    h3 {
+        color: white;
+    }
+    h2 {
+        margin-bottom: 0.25rem;
+    }
+    h3 {
+    font-family: $fontLato;
+    }
+    .f-col {
+        // flex: 1 0 48%;
+        margin-bottom: 5%;
+        background: #fff;
+        p {
+            margin: 0;
+        }
+    }
+    .name-title {
+        padding: 2rem 1.5rem 1rem 1.5rem;
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+.imageColorBg>div.imageColorBgImage {
+    background-image: url('../netstrap-child-mountaincompany/img/secondhalf.jpg');
+}
+/******************************************************
+***************    Testimonials    **************
+******************************************************/
+.testimonials-listing{
+  padding: 40px 0px;
+}
+.testimonials-listing:nth-child(even){
+background-color: white;
+}
+.testimonials-listing:nth-child(odd){
+background-color: $lightGray;
+}
+.servicesection{
+  text-align: center;
+  border: 2px solid #ccc;
+  flex: 0 0 23%;
+  padding-bottom: 40px;
+}
+.circlerollover{
+  height: 170px;
+  width: 170px;
+  border: 10px solid white;
+  display: block;
+  position: relative;
+  z-index: 999;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 10px 5px #ccc;
+  box-shadow: 0px 0px 10px 5px #ccc;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 25px;
+  cursor: pointer;
+  margin-top: -90px;
+}
+.servicepagesection{
+  .servicesection{
+    text-align: left;
+    flex: 0 0 100%;
+    padding-bottom: 40px;
+    border: 0px;
+    float: left;
+    display: inline-block;
+  }
+  .contentsection{
+    border: 2px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    float: left;
+    display: inline-block;
+    width: 80%;
+    margin-left: 40px;
+  }
+  .circlerollover{
+    height: 170px;
+    width: 170px;
+    border: 10px solid white;
+    display: block;
+    position: relative;
+    z-index: 999;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 10px 5px #ccc;
+    box-shadow: 0px 0px 10px 5px #ccc;
+    overflow: hidden;
+    margin-bottom: 25px;
+    cursor: pointer;
+    margin-top: 0px;
+    float: left;
+  }
+}
+.blueopacity, .blackopacity{
+  position: absolute;
+  top: 0px;
+  z-index: 998;
+  left: 0;
+}
+.blackopacity{
+  display: none;
+}
+.circlerollover:hover{
+  .blueopacity{
+    display: none;
+  }
+  .blackopacity{
+    display: block;
+  }
+}
+.verticalgradient{
+  background: -webkit-linear-gradient(top, rgba(45, 52, 148, 0.95) 0%, rgba(22, 117, 197, 0.98) 40%, rgb(4, 163, 231) 80%, rgb(0, 174, 239) 100%);
+  background: -o-linear-gradient(top, rgba(45, 52, 148, 0.95) 0%, rgba(22, 117, 197, 0.98) 40%, rgb(4, 163, 231) 80%, rgb(0, 174, 239) 100%);
+  background: -ms-linear-gradient(top, rgba(45, 52, 148, 0.95) 0%, rgba(22, 117, 197, 0.98) 40%, rgb(4, 163, 231) 80%, rgb(0, 174, 239) 100%);
+  background: -moz-linear-gradient(top, rgba(45, 52, 148, 0.95) 0%, rgba(22, 117, 197, 0.98) 40%, rgb(4, 163, 231) 80%, rgb(0, 174, 239) 100%);
+  background: linear-gradient(to bottom, rgba(45, 52, 148, 0.95) 0%, rgba(22, 117, 197, 0.98) 40%, rgb(4, 163, 231) 80%, rgb(0, 174, 239) 100%);
+}
+
+.horizontalgradient{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2e3192+0,1f59b0+23,0d8bd5+57,04a3e7+80,01abed+91,00aeef+100&0.95+0,0.99+58,1+100 */
+  background: -moz-linear-gradient(left, rgba(46,49,146,0.95) 0%, rgba(31,89,176,0.97) 23%, rgba(13,139,213,0.99) 57%, rgba(13,140,214,0.99) 58%, rgba(4,163,231,1) 80%, rgba(1,171,237,1) 91%, rgba(0,174,239,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(46,49,146,0.95) 0%,rgba(31,89,176,0.97) 23%,rgba(13,139,213,0.99) 57%,rgba(13,140,214,0.99) 58%,rgba(4,163,231,1) 80%,rgba(1,171,237,1) 91%,rgba(0,174,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(46,49,146,0.95) 0%,rgba(31,89,176,0.97) 23%,rgba(13,139,213,0.99) 57%,rgba(13,140,214,0.99) 58%,rgba(4,163,231,1) 80%,rgba(1,171,237,1) 91%,rgba(0,174,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f22e3192', endColorstr='#00aeef',GradientType=1 ); /* IE6-9 */
+
+}
+
+.blueboxes{
+  p{
+    line-height: 2;
+  }
+  .h1{
+    margin-bottom: 1rem;
+  }
+  .light{
+    background-color: #00AEEF;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .normal{
+    background-color: #0096EF;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .dark{
+    background-color: #007CEF;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+}
+.partnersection{
+  .col{
+    align-self: center;
+    text-align: center;
+  }
+}
+.mapsection{
+  margin-bottom: -7px;
+}
+.boxedcontainer{
+  border: 2px solid #ccc;
+  padding: 0px 20px!important;
+}
+.opacitybackgroundimage{
+  background-image: url('/wp-content/uploads/2018/12/services-background-image.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-bottom: -2px;
+}
+.aligncontentcenter{
+  align-self: center;
+}
+.recyclingbanner{
+  background-repeat: no-repeat;
+  .row{
+    padding-top: 25px!important;
+  }
+  .col{
+    padding-left: 40px;
+  }
+}
+.videobox{
+  video{
+    float: right;
+    margin-right: -8px;
+  }
+}
+.boxedcontainer15 {
+    border: 2px solid #ccc;
+    padding: 0px 15px !important;
+    .padding20 {
+        padding: 2rem 2rem!important;
+    }
+}
+.Recyclingsection{
+  margin-top: 60px;
+  .Recyclingitem{
+    background-color: #1D942D;
+    color: white;
+    flex: 0 0 23%;
+    padding-bottom: 40px;
+    img{
+      margin: auto;
+      position: relative;
+      float: none;
+      margin-top: -100px;
+    }
+    h3{
+      font-size: 6.5rem;
+      line-height: 1;
+      color: white;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    h2, p{
+      color: white;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}
+.shredussection{
+  p span{
+    font-size: 2.5rem;
+  }
+  p, h3{
+    margin-bottom: 4rem;
+  }
+}
+.testimonials-listing{
+
+  .the-testimonial{
+    margin-bottom: 40px;
+  }
+  .author{
+    margin-bottom: 80px;
+  }
+}
