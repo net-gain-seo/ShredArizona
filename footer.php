@@ -57,5 +57,9 @@
 <a href="#" class="scrollToTop">&uarr;</a>
 <div id="closeNav" class="close-nav">Close <i class="fa fa-times"></i></button></div>
 <?php wp_footer(); ?>
+
+<script type="text/javascript" src="https://secure.leadforensics.com/js/160843.js" ></script>
+<noscript><img alt="" src="https://secure.leadforensics.com/160843.png" style="display:none;" /></noscript>
+
 </body>
 </html>
