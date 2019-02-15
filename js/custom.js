@@ -23,6 +23,16 @@
 		}
 	});
 
+	jQuery("a[href^='tel:']").click(function(){
+		if (jQuery(window).width() < 576){
+			var href = jQuery(this).attr("href");
+			gtag('event', 'Click', {
+			  'event_category': 'Phone',
+			  'event_label': href
+			});
+		}
+	});
+
     // Left/right aligned containers padding offset
     // to keep things lined up
     function doResizeActions() {
