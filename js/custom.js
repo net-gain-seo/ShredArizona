@@ -1,5 +1,28 @@
 (function($) {
 
+	// Event Tracking
+	jQuery(document).on('mailsent.wpcf7', function (e) {
+		$form=jQuery(e.target);
+		if($form.attr('id').search('f114')!=-1){
+			gtag('event', 'Submit', {
+			  'event_category': 'Form',
+			  'event_label': 'Banner'
+			});
+		}
+		else if($form.attr('id').search('f260')!=-1){
+			gtag('event', 'Submit', {
+			  'event_category': 'Form',
+			  'event_label': 'Contact'
+			});
+		}
+		else if($form.attr('id').search('f268')!=-1){
+			gtag('event', 'Submit', {
+			  'event_category': 'Form',
+			  'event_label': 'Pop-Over'
+			});
+		}
+	});
+
     // Left/right aligned containers padding offset
     // to keep things lined up
     function doResizeActions() {
