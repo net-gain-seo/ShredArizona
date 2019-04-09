@@ -286,6 +286,14 @@
 }
 
 @media only screen and (max-width: $screen-sm-max) {
+  .contactPage .greybackground {
+    display: none;
+  }
+  .contactPage #wpcf7-f260-p17-o1 {
+    padding: 40px;
+    margin-top: 40px;
+    background-color: #EBEBEC;
+  }
   .f-product .f-col {
       background: #fff;
       max-width: 400px;
@@ -375,7 +383,13 @@
         padding: 20px 0px;
         padding-bottom: 0px;
     }
-  .nav-phone, .nav-contact{
+    header .mobile-icons a {
+      margin-right: 0;
+    }
+    .nav-phone, .nav-contact {
+      padding: 0 20px;
+    }
+  .nav-phone span, .nav-contact span{
     display: none;
   }
   .p-products{
@@ -384,9 +398,12 @@
     }
   }
     body:not(.sticky-header) {
-      .nav-phone, .nav-contact{
-        display: block;
-        font-size: 1.5rem;
+      .nav-phone, .nav-contact {
+        padding: 0;
+        margin-right: 20px;
+        span {
+          display: inline;
+        }
       }
         .site-header {
             height: auto;
@@ -441,7 +458,13 @@
     }
 }
 @media only screen and (max-width: 389px) {
-  .nav-phone, .nav-contact{
-    display: none!important;
-  }
+   body:not(.sticky-header) {
+      .nav-phone, .nav-contact {
+        padding: 0 20px;
+        margin-right: 0;
+        span {
+          display: none;
+        }
+      }
+    }
 }
