@@ -5,8 +5,8 @@
 <div class="mast page-mast">
     <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/12/About-Us-Banner.jpg" />
     <div class="container mast-overlay">
-        <h1>About Us</h1>
-        <p>Testimonials</p>
+        <h1>Testimonials</h1>
+        <p>Don't take our word for it. Read these glowing testimonials on our shredding services.</p>
     </div>
 </div>
 <div class="container-fluid testimonials-listing">
