@@ -172,6 +172,9 @@
           flex-basis: 100%;
           text-align: center;
       }
+      .address .section.dropoff, .address .section.location {
+        width: 49%;
+      }
       .footer-nav {
           order: 1;
       }
@@ -423,10 +426,15 @@
     .g-recaptcha{
       transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
     }
-    .flex-footer .address .half {
-        width: 80%;
+    .flex-footer .address .section {
         display: inline-block;
         margin-bottom: 15px;
+        &.dropoff {
+          width: 80%;
+        }
+        &.location {
+          width: 80%;
+        }
     }
 }
 @media only screen and (max-width: 389px) {

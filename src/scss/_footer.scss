@@ -78,18 +78,28 @@ footer{
       margin-top: 25px;
       margin-bottom: 40px;
       align-self: self-start;
+      flex: 1 0 60%;
       h3{
         color: $primaryColor;
         margin-bottom: 0px;
       }
-      .half{
-        width: 49%;
+      .section{
         display: inline-block;
+        vertical-align: top;
         h3{
           color: $primaryColor;
           margin-bottom: 0px;
         }
+        &.dropoff {
+          width: 62%;
+        }
+        &.location {
+          width: 37%;
+        }
       }
+    }
+    .logo {
+      flex: 1 0 40%;
     }
 }
 .netgain {
