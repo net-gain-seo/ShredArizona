@@ -11,11 +11,11 @@
           </div>
         </div>
         <div class="f-item phone">
-            <a href="tel:16024413339">A1 Shredding | Call (602) 441-3339</a>
+            <a href="tel:16024413339">Call (602) 441-3339</a>
         </div>
         <div class="f-item logo">
           <div>
-            
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="A-1 Shredding - your Privacy is Our Priority"></a>
           </div>
         </div>
         <div class="f-item address">
