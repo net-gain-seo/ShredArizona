@@ -138,11 +138,8 @@
   .slick-home-next, .slick-home-prev {
     top: 20%;
   }
-  header .mobile-icons {
-      display: block;
-  }
   .flex-header .logo, .flex-header .stickylogo {
-      padding-left: 1rem;
+      padding: 0 15px;
       display: block;
       flex: 0 0 100%;
   }
@@ -239,6 +236,7 @@
             line-height: 60px;
             float: right;
             margin-right: 20px;
+            color: #FFF;
           }
           a:first-child{
             margin-right: 0px;
@@ -276,7 +274,7 @@
   .mobilecover{
     background-size: cover;
   }
-  .footer-form .submit-container {
+  div.wpcf7 .footer-form .submit-container {
       margin-top: 5px;
       -webkit-box-flex: 0;
       -ms-flex: 0;
