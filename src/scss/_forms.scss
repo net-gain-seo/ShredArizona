@@ -14,6 +14,10 @@
   margin-top: 80px;
   margin-bottom: 40px;
 }
+div.wpcf7 .ajax-loader {
+  background-image: url('img/ajax-loader-main.gif');
+  //Generated at http://ajaxload.info/
+}
 .Contactpage{
   form{
       max-width: 460px;
@@ -336,7 +340,8 @@ div.wpcf7 .footer-form {
       top: 0;
       background-color: rgba(0,174,239,0.7);
       height: 100%;
-      background-image: url('img/ajax-loader.gif');
+      background-image: url('img/ajax-loader-footer.gif');
+      //Generated at http://ajaxload.info/
     }
 }
 
