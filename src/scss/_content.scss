@@ -533,3 +533,10 @@ background-color: $lightGray;
     margin-bottom: 80px;
   }
 }
+.column-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-wrap: wrap;
+  max-height: 525px;
+}

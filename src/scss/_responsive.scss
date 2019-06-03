@@ -454,6 +454,9 @@
           width: 80%;
         }
     }
+    .column-list {
+      max-height: none;
+    }
 }
 @media only screen and (max-width: 389px) {
    body:not(.sticky-header) {
