@@ -346,6 +346,13 @@
           align-self: center;
       }
   }
+  .flex-header {
+    .header-block {
+      .inner-block {
+        justify-content: center;
+      }
+    }
+  }
   .mast {
       .mast-overlay {
           // display: none;

@@ -407,7 +407,8 @@ div.wpcf7 .footer-form {
     }
     div.wpcf7 .footer-form {
         p {
-            flex-basis: 47%;
+            flex-basis: 65%;
+            max-width: 65%
         }
     }
 }
@@ -423,6 +424,7 @@ div.wpcf7 .footer-form {
     div.wpcf7 .footer-form {
         p {
             flex-basis: 100%;
+            max-width: none;
         }
     }
 }
