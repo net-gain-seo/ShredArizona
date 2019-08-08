@@ -18,7 +18,8 @@
 
 	  gtag('config', 'UA-5997020-1');
 	</script>
-
+    <!-- Call Tracking Script -->
+    <script async src="//193452.tctm.co/t.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
