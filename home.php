@@ -8,26 +8,22 @@
             <p>What's in the Shredding News?</p>
         </div>
     </div>
-   <article class="page-content">
-     <div class="container">
-       <div class="row">
-         <div class="col col-lg-12 col-md-12 col-sm-12 col-xsm-12">
 
-              <?php while ( have_posts() ) : the_post(); ?>
-
-                <div id="Post" class="blogposts">
-                  <h2 class="post-title">
-                      <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                  </h2>
-                  <?php the_excerpt(); ?>
-                </div>
-
-              <?php endwhile; // End of the loop. ?>
-
-          </div>
+    <div class="container blog-listing">
+      <div class="row">
+        <div class="col col-12 col-lg-12">
+          <?php while ( have_posts() ) : the_post(); ?>
+            <article class="blogpost">
+              <h1 class="post-title">
+                  <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </h1>
+              <?php the_excerpt(); ?>
+            </article>
+          <?php endwhile; // End of the loop. ?>
         </div>
       </div>
-    </article>
+    </div>
+
     <div class="container-fluid  horizontalgradient">
       <div class="container">
         <div class="row padding60">
@@ -38,6 +34,7 @@
         </div>
       </div>
     </div>
+
     <div class="container thumbnailgallery">
       <div class="row padding80">
         <div class="col col-lg-2 col-md-2 col-sm-6 col-xsm-6 ">

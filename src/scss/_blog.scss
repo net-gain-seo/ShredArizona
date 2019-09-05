@@ -17,9 +17,13 @@
     }
     h1 {
         margin-bottom: 2rem;
-        color: $secondaryColor;
+        font-size: 3rem;
+        a {
+            font-size: 3rem;
+        }
     }
     .more-link {
+        font-weight: bold;
         color: $primaryColor;
         &:hover {
             color: $secondaryColor;

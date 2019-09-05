@@ -8,7 +8,6 @@
     <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/12/About-Us-Banner.jpg" />
     <div class="container mast-overlay">
         <h1><?php the_title(); ?></h1>
-        <p>What's in the Shredding News?</p>
     </div>
 </div>
 <div class="container blog-content">
@@ -17,10 +16,6 @@
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <article>
-                    <div class="blog-title">
-                        <h1><?php the_title(); ?></h1>
-                    </div>
-
                     <div class="blog-article">
                         <?php the_content(); ?>
                     </div>
