@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="mast page-mast">
     <img src="<?php echo home_url(); ?>/wp-content/uploads/2018/12/About-Us-Banner.jpg" />
     <div class="container mast-overlay">
-        <h1>404 Page Not Found <?php the_title(); ?></h1>
+        <h1>404 Page Not Found</h1>
     </div>
 </div>
 <div class="container">
